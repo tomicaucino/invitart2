@@ -25,7 +25,7 @@ const PremiumInvite = () => {
     return (
         <main>
             <Navbar />
-            <Portada novio="Juan" novia="Agus"/>
+            <Portada novio="Agus" novia="Juan"/>
             <NiceSeparator />
             <Ceremonia />
             <NiceSeparator />

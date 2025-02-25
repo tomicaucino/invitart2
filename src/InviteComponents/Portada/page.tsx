@@ -37,7 +37,7 @@ export const Portada = ({ novio, novia }: PortadaProps) => {
             <div className="absolute inset-0 bg-black/30" /> {/* Overlay for better text contrast */}
             
             <motion.div className="absolute inset-0 flex items-center justify-center -mt-24">
-                <div className="relative w-full flex flex-col items-center justify-center">
+                <div className="relative w-screen flex flex-col items-center justify-center">
                     <Meteors number={30} />
                     
                     <motion.h1 
