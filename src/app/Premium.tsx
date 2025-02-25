@@ -18,14 +18,14 @@ const setFavicon = () => {
 const PremiumInvite = () => {
 
     useEffect(() => {
-        document.title = "Manu & Tebi";
+        document.title = "Juan & Agus";
         setFavicon();
       }, []);
 
     return (
         <main>
             <Navbar />
-            <Portada novio="Manu" novia="Tebi"/>
+            <Portada novio="Juan" novia="Agus"/>
             <NiceSeparator />
             <Ceremonia />
             <NiceSeparator />
