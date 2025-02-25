@@ -27,10 +27,10 @@ const Footer = () => {
         <div>
           <h4 className="font-medium mb-4">Tipos de Invitaciones</h4>
           <ul className="space-y-2">
-            <li><a href="" className="text-rose-200 hover:text-white transition-colors">Casamientos</a></li>
-            <li><a href="" className="text-rose-200 hover:text-white transition-colors">Aniversarios/Cumpleaños</a></li>
-            <li><a href="" className="text-rose-200 hover:text-white transition-colors">Gender Reveals</a></li>
-            <li><a href="" className="text-rose-200 hover:text-white transition-colors">Baby Showers</a></li>
+            <li><a onClick={() => scrollToSection('gallery')} className="text-rose-200 hover:text-white transition-colors cursor-pointer">Casamientos</a></li>
+            <li><a onClick={() => scrollToSection('gallery')} className="text-rose-200 hover:text-white transition-colors cursor-pointer">Aniversarios/Cumpleaños</a></li>
+            <li><a onClick={() => scrollToSection('gallery')} className="text-rose-200 hover:text-white transition-colors cursor-pointer">Gender Reveals</a></li>
+            <li><a onClick={() => scrollToSection('gallery')} className="text-rose-200 hover:text-white transition-colors cursor-pointer">Baby Showers</a></li>
           </ul>
         </div>
         <div>
