@@ -7,10 +7,12 @@ import VintageWedding from "./app/VintageInvitation";
 import PremiumInvite from "./app/Premium";
 import ModernWedding from "./app/ModernWedding";
 import GenderReveal from "./app/GenderReveal";
+import ScrollToTop from "./components/ScrollToTop";
 
 const AppRoutes: React.FC = () => {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/genderreveal" element={<GenderReveal />} />
