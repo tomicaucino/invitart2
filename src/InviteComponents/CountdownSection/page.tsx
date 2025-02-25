@@ -13,7 +13,8 @@ interface CountdownProps {
   date: string
 }
 
-export function CountdownSection({ onCountdownEnd, date }: CountdownProps) {
+//add date prop down here when needed
+export function CountdownSection({ onCountdownEnd }: CountdownProps) {
   const calculateTimeLeft = useCallback((): Partial<TimeLeft> => {
     // const TARGET_DATE = new Date(date)
     const TARGET_DATE = new Date();
