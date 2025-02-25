@@ -13,12 +13,12 @@ const AppRoutes: React.FC = () => {
     <Router>
       <Routes>
         <Route path="/invitart2" element={<Home />} />
-        <Route path="/genderreveal" element={<GenderReveal />} />
-        <Route path="/Modern" element={<ModernWedding />} />
-        <Route path="/Premium" element={<PremiumInvite />} />
-        <Route path="/Vintage" element={<VintageWedding />} />
-        <Route path="/sectionized" element={<FranyPalo />} />
-        <Route path="/gonza&agus" element={<GonzayAgus />} />
+        <Route path="/invitart2/genderreveal" element={<GenderReveal />} />
+        <Route path="/invitart2/Modern" element={<ModernWedding />} />
+        <Route path="/invitart2/Premium" element={<PremiumInvite />} />
+        <Route path="/invitart2/Vintage" element={<VintageWedding />} />
+        <Route path="/invitart2/sectionized" element={<FranyPalo />} />
+        <Route path="/invitart2/gonza&agus" element={<GonzayAgus />} />
       </Routes>
     </Router>
   );
