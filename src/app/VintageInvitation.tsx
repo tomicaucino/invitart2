@@ -163,7 +163,7 @@ const VintageWedding = () => {
                     { value: timeLeft.seconds, label: 'Seconds' }
                   ].map((unit) => (
                     <div key={unit.label} className="text-center md:w-24 transition-all hover:scale-110 duration-300">
-                      <div className="bg-white bg-opacity-70 rounded-lg shadow p-2">
+                      <div className="bg-white bg-opacity-70 rounded-lg shadow p-2 w-[75px] sm:w-full">
                         <div className="text-2xl font-bold text-amber-700">{unit.value}</div>
                         <div className="text-xs uppercase tracking-wider text-amber-800">{unit.label}</div>
                       </div>

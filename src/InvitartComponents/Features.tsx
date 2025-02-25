@@ -29,7 +29,7 @@ const Features = () => {
   return (
     <div id="services" className="bg-stone-50 py-24 px-4 scroll-mt-16">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-serif text-center text-rose-900 mb-16">Nuestros Services</h2>
+        <h2 className="text-4xl font-serif text-center text-rose-900 mb-16">Nuestros Servicios</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {features.map((feature, index) => (
             <div 

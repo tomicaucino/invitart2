@@ -21,7 +21,7 @@ export const Portada = ({ novio, novia }: PortadaProps) => {
     return (
         <section 
             ref={containerRef} 
-            className="relative w-screen h-[380px] sm:h-[500px] overflow-hidden"
+            className="relative w-screen h-screen sm:h-[500px] overflow-hidden"
         >
             <motion.div 
                 className="absolute inset-0" // Extra height for parallax movement
@@ -30,18 +30,18 @@ export const Portada = ({ novio, novia }: PortadaProps) => {
                 <img 
                     src="./images/couple2.jpg" 
                     alt="couple"
-                    className="w-full h-auto sm:h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+                    className="w-full h-screen object-cover"
                 />
             </motion.div>
             
             <div className="absolute inset-0 bg-black/30" /> {/* Overlay for better text contrast */}
             
-            <motion.div className="absolute inset-0 flex items-center justify-center -mt-24">
+            <motion.div className="relative flex items-center justify-center">
                 <div className="relative w-screen flex flex-col items-center justify-center">
                     <Meteors number={30} />
                     
                     <motion.h1 
-                        className="mt-24 text-5xl md:text-7xl lg:text-8xl font-bold text-white text-center drop-shadow-lg font-cursive z-10" 
+                        className="mt-[400px] sm:mt-[200px] text-5xl md:text-7xl lg:text-8xl font-bold text-white text-center drop-shadow-lg font-cursive z-10" 
                         initial={{ y: -50, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
