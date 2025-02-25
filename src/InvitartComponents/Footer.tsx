@@ -18,10 +18,10 @@ const Footer = () => {
         <div>
           <h4 className="font-medium mb-4">Links</h4>
           <ul className="space-y-2">
-            <li><a onClick={() => scrollToSection('home')} className="text-rose-200 hover:text-white transition-colors">Inicio</a></li>
-            <li><a onClick={() => scrollToSection('services')} className="text-rose-200 hover:text-white transition-colors">Servicios</a></li>
-            <li><a onClick={() => scrollToSection('gallery')} className="text-rose-200 hover:text-white transition-colors">Galeria</a></li>
-            <li><a onClick={() => scrollToSection('contact')} className="text-rose-200 hover:text-white transition-colors">Contacto</a></li>
+            <li><a onClick={() => scrollToSection('home')} className="text-rose-200 hover:text-white transition-colors cursor-pointer">Inicio</a></li>
+            <li><a onClick={() => scrollToSection('services')} className="text-rose-200 hover:text-white transition-colors cursor-pointer">Servicios</a></li>
+            <li><a onClick={() => scrollToSection('gallery')} className="text-rose-200 hover:text-white transition-colors cursor-pointer">Galeria</a></li>
+            <li><a onClick={() => scrollToSection('contact')} className="text-rose-200 hover:text-white transition-colors cursor-pointer">Contacto</a></li>
           </ul>
         </div>
         <div>
@@ -70,7 +70,7 @@ const Footer = () => {
             duration: 1,
             ease: "easeInOut",
           }}
-          href="https://wa.me/YOUR_PHONE_NUMBER"
+          href="https://wa.me/543415875529"
           className="fixed bottom-5 right-5 bg-green-500 rounded-full p-3 shadow-lg hover:bg-green-600 transition-all hover:-translate-y-1"
           target="_blank"
           rel="noopener noreferrer"
