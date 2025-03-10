@@ -38,14 +38,14 @@ const Hero = () => {
           InvitArt
         </h1>
         <p className="text-xl md:text-2xl font-light max-w-2xl text-rose-800 mb-8 animate-fade-in-down" style={{animationDelay: '0.5s'}}>
-          Beautiful digital invitations for your most precious celebrations
+          Invitaciones Digitales Para Tus Celebraciones
         </p>
         <button 
           className="bg-rose-600 hover:bg-rose-700 text-white px-8 py-3 rounded-full font-medium transition-all shadow-lg hover:shadow-xl animate-fade-in-up" 
           style={{animationDelay: '0.8s'}}
-          onClick={() => scrollToSection('contact')}
+          onClick={() => scrollToSection('gallery')}
         >
-          Create Your Invitation
+          Ver Modelos de Invitaciones
         </button>
       </div>
     </div>

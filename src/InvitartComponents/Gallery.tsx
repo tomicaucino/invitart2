@@ -1,11 +1,11 @@
 const Gallery = () => {
   // Array of image paths
   const images = [
-    {img:'./images/married1.jpg', src:"/invitart2/#/vintage", description:"Vintage"},
-    {img:'./images/married3.jpg', src:"/invitart2/#/modern", description:"Moderna"},
-    {img:'./images/married2.jpg', src:"/invitart2/#/premium", description:"Premium"},
-    {img:'./images/married4.jpg', src:"/invitart2/#/sectionized", description:"Por secciones"},
-    {img:'./images/genderreveal.jpg', src:"/invitart2/#/genderreveal", description:"Gender Reveal"},
+    {img:'./images/married1.jpg', src:"/#/vintage", description:"Vintage"},
+    {img:'./images/married3.jpg', src:"/#/modern", description:"Moderna"},
+    {img:'./images/married2.jpg', src:"/#/premium", description:"Premium"},
+    {img:'./images/married4.jpg', src:"/#/sectionized", description:"Por secciones"},
+    {img:'./images/genderreveal.jpg', src:"/#/genderreveal", description:"Gender Reveal"},
   ];
   
   return (

@@ -23,13 +23,13 @@ const CTA = () => {
               className="bg-rose-600 hover:bg-rose-700 text-white px-8 py-4 rounded-full font-medium transition-all shadow-lg hover:shadow-xl text-lg"
               onClick={() => scrollToSection('contact')}
             >
-              Get Started Now
+              Contactanos
             </button>
             <button 
               className="bg-transparent border-2 border-rose-600 text-rose-600 hover:bg-rose-50 px-8 py-4 rounded-full font-medium transition-all shadow-lg hover:shadow-xl text-lg"
               onClick={() => scrollToSection('gallery')}
             >
-              View Gallery
+              Ver Modelos
             </button>
           </div>
         </div>
