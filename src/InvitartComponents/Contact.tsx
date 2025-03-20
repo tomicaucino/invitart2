@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { SendIcon, PhoneIcon, MapPinIcon } from 'lucide-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import emailjs from '@emailjs/browser';
 
 
 
@@ -12,11 +13,12 @@ const Contact = () => {
     email: '',
     phone: '',
     message: '',
-    eventType: 'wedding'
+    eventType: 'Casamientos'
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   
   
@@ -31,25 +33,36 @@ const Contact = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitError('');
   
+    // EmailJS service ID, template ID, and public key
+    const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+    const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+    const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
+    
     try {
-      const response = await fetch('http://localhost:4000/send-email', {  // backend URL
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+      const result = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          event_type: formData.eventType,
+          message: formData.message,
         },
-        body: JSON.stringify(formData),  // data from the form
-      });
-  
-      const result = await response.json();
-      
-      if (result.success) {
+        publicKey
+      );
+    
+      if (result.status === 200) {
         setSubmitSuccess(true);
+        // Reset form
       } else {
-        console.error('Error sending email:', result.message);
+        setSubmitError('Error al enviar el mensaje. Por favor, intenta nuevamente.');
       }
     } catch (error) {
       console.error('Error:', error);
+      setSubmitError('Hubo un problema al enviar tu mensaje. Por favor, intenta nuevamente.');
     } finally {
       setIsSubmitting(false);
     }
@@ -168,6 +181,11 @@ const Contact = () => {
                     <>
                       <SendIcon className="h-5 w-5 mr-2" />
                       Enviar Mensaje
+                      {submitError && (
+                        <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3 rounded-lg">
+                          {submitError}
+                        </div>
+                      )}
                     </>
                   )}
                 </button>
